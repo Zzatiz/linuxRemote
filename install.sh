@@ -39,8 +39,8 @@ else
 fi
 
 # 5) Python libs
-python3 -m pip install --upgrade pip
-python3 -m pip install python-telegram-bot requests
+python3 -m pip install --upgrade pip --break-system-packages
+python3 -m pip install python-telegram-bot requests --break-system-packages
 
 # 6) Prompt for bot & folder config
 read -p "Telegram BOT_TOKEN: "      BOT_TOKEN
