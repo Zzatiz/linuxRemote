@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+/etc/default/remote-bot
+/opt/remote-bot
+*.log
