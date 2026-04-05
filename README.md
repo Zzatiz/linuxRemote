@@ -1,9 +1,10 @@
-Thought for a second
+<p align="center">
+  <img src="assets/banner.svg" alt="linuxRemote Banner" width="100%"/>
+</p>
 
+# linuxRemote
 
-# Remote-Bot
-
-A lightweight Telegram bot for remote laptop management and “self-destruct” in case of theft.
+A lightweight Telegram bot for remote Linux machine management and "self-destruct" in case of theft. Control your machine from anywhere via Telegram commands — open SSH tunnels, encrypt/decrypt folders, wipe sensitive data, sync files to the cloud, and check your machine's location.
 
 Features include:
 
@@ -28,7 +29,7 @@ Features include:
 
 ```bash
 git clone https://github.com/Zzatiz/linuxRemote.git
-cd remote-bot
+cd linuxRemote
 sudo chmod +x install.sh
 sudo chmod +x uninstall.sh
 sudo ./install.sh
@@ -83,7 +84,7 @@ journalctl -u remote-bot -f
 
 3. Enter your credentials and set `hard_delete` to `true`.
 
-4. During install, set `RCLONE_REMOTE` in .env to `myremote:your-bucket`.
+4. During install, set `RCLONE_REMOTE` to `myremote:your-bucket`.
 
 ---
 
@@ -103,12 +104,6 @@ Send `/start <password>` to your bot for a full command list:
 /upload <password>
 ```
 
-Example:
-
-```
-/where password
-```
-
 ---
 
 ## Uninstallation
@@ -124,13 +119,6 @@ This will:
 3. Delete `/opt/remote-bot`
 4. Reload systemd
 
-To purge dependencies:
-
-```bash
-sudo apt remove --purge python3-venv python3-pip python3 \
-                  gocryptfs fuse rclone openssh-server rsync
-```
-
 ---
 
 ## Security Notes
@@ -144,4 +132,4 @@ sudo apt remove --purge python3-venv python3-pip python3 \
 
 ## License
 
-MIT © Your Name
+MIT
